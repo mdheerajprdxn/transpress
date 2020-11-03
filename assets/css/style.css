@@ -332,9 +332,53 @@ nav ul li a:hover .fa:Before{
 
 
 /* ABOUT US */
+.about-us {
+  background-color: #F9F9F9;
+}
 .about-us .wrapper {
   display: flex;
+  width: 100%;
 }
+
+.about-us .wrapper *{
+  flex-basis: 50%;
+}
+
+.about-desc {
+  padding: 90px 6% 90px 6%;
+}
+.about-desc p:nth-child(3) {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  line-height: 1.5rem;
+}
+
+.about-desc p:nth-child(4) {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 20px 0;
+  line-height: 1.5rem;
+}
+.about-us h2 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #333333;
+}
+
+.green-underline-left {
+  margin: 10px 0;
+  padding: 2px;
+  background-color: #32AF96;
+  width: 40px;
+}
+
+.about-video {
+  background: url('../img/video.jpeg');
+}
+
 
 /* STATISTICS */
 
