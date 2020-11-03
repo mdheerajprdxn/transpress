@@ -205,8 +205,65 @@ nav ul li a:hover .fa:Before{
 
 /* JUMBOTRON */
 
+.jumbotron {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/slider.jpg');
+  background-size: cover;
+  color: white;
+  padding: 30px 0;
+}
+.jumbotron .wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
 
+.jumbotron .wrapper * {
+  margin: 5px 0;
+}
+.jumbotron h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.jumbotron-text {
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
 
+.jumbotron-list {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  
+}
+.jumbotron-list li{
+  display: flex;
+  flex-flow: column;
+  background-color: white;
+  color: black;
+  padding: 20px 0px;
+  text-transform: uppercase;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 23%;
+}
+
+.jumbotron-list li .fa {
+  color: #32AF96;
+  font-size: 5rem;
+}
+.jumbotron .wrapper .white-link {
+  margin-left: 7px;
+  background-color: #fff;
+  color: #777;
+  padding: 15px 30px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
 /*=================================
   Header styling ends here
 =================================*/  
@@ -240,6 +297,53 @@ nav ul li a:hover .fa:Before{
   footer styling ends here
 =================================*/ 
 
+.truck-icon:before{
+  content: "\f0d1";
+}
+
+.boat-icon:before{
+  content: "\f21a";
+}
+
+.flight-icon:before{
+  content: "\f072 ";
+}
+
+.storage-icon:before{
+  content: "\f233 ";
+}
+
+.car-icon:before{
+  content: "\f1b9 ";
+}
+
+.industry-icon:before{
+  content: "\f275 ";
+}
+
+.world-icon:before{
+  content: "\f0ac ";
+}
+
+ 
+.cubes-icon:before{
+  content: "\f1b3  ";
+}
+
+.people-icon:before{
+  content: "\f0c0  ";
+}
+
+.like-icon:before{
+  content: "\f164  ";
+}
+
+.smiley-icon:before{
+  content: "\f118  ";
+}
+.right-arrow:before {  
+  content: "\f061";
+}
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
