@@ -183,6 +183,11 @@ nav {
   text-transform: capitalize;
 }
 
+nav .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .down-arrow::before {
   content: "\f0d7";
   color: white;
@@ -417,6 +422,124 @@ nav ul li a:hover .fa:Before{
   color: #32AF96;
   font-size: 3rem;
 }
+
+/* INFO */
+.info {
+  padding: 100px 0;
+}
+.info .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info h2 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 30px;
+}
+.info .wrapper >* {
+  flex-basis: 48%;
+}
+
+.special ul {
+ display: flex;
+ flex-flow: column;
+}
+
+.accordian-header {
+  display: flex;
+  width: 100%;
+}
+
+.accordian-header .right-arrow {
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+}
+
+.accordian-header .right-arrow::before {
+  font-size: 0.9rem;
+  padding: 0 25px;
+}
+
+.accordian-header h3 {
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  /* box-sizing: border-box; */
+  flex-grow: 1;
+}
+
+.accordian-header h3 .fa {
+  margin-right: 10px;
+}
+
+.special ul li .fa {
+  font-size: 1.7rem;
+  color: #bbb;
+}
+
+.accordian-content {
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #777;
+  line-height: 1.5rem;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.news-stories {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-stories li {
+  flex-basis: 48%;
+  border: 1px solid #ccc;
+}
+
+.news-content {
+  padding: 15px;
+  font-size: .9rem;
+  color: #777;
+}
+
+.news-content date {
+  font-size: 1rem;
+}
+.news-content * {
+  margin: 5px 0;
+}
+
+.news-content p {
+  line-height: 1.5rem;
+}
+.news-content .fa:before {
+  color: #32AF96;
+}
+
+.news-content h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #333;
+}
+
+.news-content .read-more {
+  text-transform: uppercase;
+  color: #777 ;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.news-content .read-more .fa:before {
+  color: #777 ;
+
+}
+
 /*=================================
   main styling ends here
 =================================*/
@@ -434,10 +557,24 @@ nav ul li a:hover .fa:Before{
  /*=================================
   footer styling ends here
 =================================*/ 
-
+/* ICONS  */
 .truck-icon:before{
   content: "\f0d1";
 }
+
+.bag-icon:before {
+  content: "\f290 ";
+  color: white;
+  font-size: 1.2rem;
+}
+
+.search-icon:before {
+  font-size: 1.2rem;
+  color: white;
+  content: "\f002 ";
+  margin-left: 5px;
+}
+
 
 .boat-icon:before{
   content: "\f21a";
