@@ -174,6 +174,39 @@ li {
 .header-info ul{
   display: flex;
 }
+
+/* NAVBAR */
+
+nav {
+  background-color: black;
+  padding: 1.3rem 0;
+  text-transform: capitalize;
+}
+
+.down-arrow::before {
+  content: "\f0d7";
+  color: white;
+}
+
+nav ul li {
+  padding: 0 10px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+nav ul li a{
+  color: white;
+}
+
+nav ul li a:hover, 
+nav ul li a:hover .fa:Before{
+  color: #32AF96;
+}
+
+/* JUMBOTRON */
+
+
+
 /*=================================
   Header styling ends here
 =================================*/  
