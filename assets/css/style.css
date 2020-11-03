@@ -330,6 +330,49 @@ nav ul li a:hover .fa:Before{
   color: #777;
 }
 
+
+/* ABOUT US */
+.about-us .wrapper {
+  display: flex;
+}
+
+/* STATISTICS */
+
+.statistics {
+  background-color: #333;
+  color: white;
+  padding: 70px 0;
+}
+
+.statistics ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.statistics ul li {
+  flex-basis: 30%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.statistics .number{
+  margin: 10px 0 20px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.statistics span:nth-child(3) {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+.statistics .fa:before{
+  color: #32AF96;
+  font-size: 3rem;
+}
 /*=================================
   main styling ends here
 =================================*/
