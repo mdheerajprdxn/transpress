@@ -103,15 +103,77 @@ li {
   width: 86%; 
   margin: 0 auto;
 }
+
+/* GENERAL STYLES */
+
+.green-link {
+  background-color: #32AF96;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
 /*=================================
   Header styling starts here
 =================================*/
 
+/* HEADER */
 
+.top-header {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+}
 
+.header-info {
+  display: flex;
+}
+.header-info-desc {
+  display: flex;
+  flex-flow: column;
+}
 
+.phone-icon:before {
+  content: "\f095";
+}
 
+.home-icon:before {
+  content: "\f015";
+}
+ 
+.clock-icon:before {
+  content: "\f017";
+}
 
+.header-info-item {
+  display: flex;
+  margin-right: 20px;
+}
+
+.header-info-item .fa::before{
+  color: #32AF96;
+  font-size: 2rem;
+  padding-right:20px;
+}
+
+.header-info {
+  display: flex;
+  /* flex-basis: 60%; */
+}
+
+.header-info-desc span:nth-child(1) {
+  font-weight: 600;
+}
+.header-info-desc span:nth-child(2) {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.header-info ul{
+  display: flex;
+}
 /*=================================
   Header styling ends here
 =================================*/  
