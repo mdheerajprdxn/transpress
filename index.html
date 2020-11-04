@@ -10,7 +10,7 @@
   <title>Client</title>
 
   <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
-  <!-- <meta name="description" lang="en" content=""> -->
+  <meta name="description" lang="en" content="">
 
   <!-- Keywords to help with SEO go here. Note: Usage of lang tag.  -->
   <!-- <meta name="keywords" lang="en" content=""> -->
@@ -19,7 +19,7 @@
   <!-- This meta tag is used for mobile device to display the page without any zooming,
        so how much the device is able to fit on the screen is what's shown initially. 
        Remove comments from this tag, when you want to apply media queries to the website. -->
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <!-- To adhear no-cache for Chrome -->
   <!--   <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate" />
@@ -83,7 +83,7 @@
       </div>
       <nav>
         <div class="wrapper">
-          <ul class="nav">
+          <ul class="nav" id="nav">
             <li> <a href="#FIXME" title="Home"> home <span class="fa down-arrow"></span> </a> </li>
             <li><a href="#FIXME" title="Pages"> pages <span class="fa down-arrow"></span> </li>
             <li><a href="#FIXME" title="Gallery"> gallery <span class="fa down-arrow"></span> </a> </li>
@@ -94,9 +94,10 @@
             <li> <a href="#FIXME" title="Contact Us"> contact us</a></li>
           </ul>
           <span class="nav-icons">
-            <span class="icon bag"></span>
-            <span class="icon search"></span>
+            <span class="fa bag-icon"></span>
+            <span class="fa search-icon"></span>
           </span>
+          <button class="fa hamburger-icon"></button>
         </div>
       </nav>
     </header>
@@ -224,7 +225,7 @@
             <a href="#FIXME" title="Read More" class="green-link">read more</a>
           </div>
           <div class="about-video">
-            <span class="play-icon"></span>
+            <span class="fa play-icon"></span>
           </div>
         </div>
       </section>
@@ -266,22 +267,32 @@
             <h2>what makes us special?</h2>
             <ul>
               <li>
-                <h3> <span class="fa right-arrow"></span> <span class="fa boat-icon"></span> we are creative &
-                  professional
-                </h3>
-                <p>Transpress group is one of the most experienced and respected building and civil construction firms
+                <div class="accordian-header">
+                  <span class="fa right-arrow"> </span>
+                  <h3> <span class="fa boat-icon"></span> we are creative & professional </h3>
+                </div>
+                <p class="accordian-content">Transpress group is one of the most experienced and respected building and
+                  civil construction firms
                   in the united kingdom. For over a century, we have been transforming ideas and visions of our clients.
                 </p>
               </li>
               <li>
-                <h3> <span class="fa right-arrow"></span> <span class="fa flight-icon"></span>honest and dependable</h3>
+                <div class="accordian-header">
+                  <span class="fa right-arrow"> </span>
+                  <h3> <span class="fa flight-icon"></span>honest and dependable</h3>
+                </div>
               </li>
               <li>
-                <h3> <span class="fa right-arrow"></span> <span class="fa truck-icon"></span>quality commitment</h3>
+                <div class="accordian-header">
+                  <span class="fa right-arrow"></span>
+                  <h3></span> <span class="fa truck-icon"></span>quality commitment</h3>
+                </div>
               </li>
               <li>
-                <h3> <span class="fa right-arrow"></span> <span class="fa world-icon"></span>we are always improving
-                </h3>
+                <div class="accordian-header">
+                  <span class="fa right-arrow"> </span>
+                  <h3> <span class="fa world-icon"></span>we are always improving </h3>
+                </div>
               </li>
             </ul>
           </div>
@@ -290,29 +301,35 @@
             <ul class="news-stories">
               <li>
                 <img src="assets/img/video.jpg" alt="">
-                <h3>8 paint colors what will make you</h3>
-                <span class="date">
-                  <span class="fa clock-icon">
+                <div class="news-content">
+                  <h3>8 paint colors what will make you</h3>
+                  <span class="date">
+                    <span class="fa clock-icon">
+                    </span>
                     Nov 23, 2016
                   </span>
-                </span>
-                <p>
-                  Skip the do-overs and pick the perfect paint color the first time around.
-                </p>
-                <a href="#FIXME" title="Read More">read more <span class="fa right-arrow"></span> </a>
+                  <p>
+                    Skip the do-overs and pick the perfect paint color the first time around.
+                  </p>
+                  <a class="read-more" href="#FIXME" title="Read More">read more <span class="fa right-arrow"></span>
+                  </a>
+                </div>
               </li>
               <li>
                 <img src="assets/img/video.jpg" alt="">
-                <h3>8 paint colors what will make you</h3>
-                <span class="date">
-                  <span class="fa clock-icon">
+                <div class="news-content">
+                  <h3>8 paint colors what will make you</h3>
+                  <span class="date">
+                    <span class="fa clock-icon">
+                    </span>
                     Nov 23, 2016
                   </span>
-                </span>
-                <p>
-                  Skip the do-overs and pick the perfect paint color the first time around.
-                </p>
-                <a href="#FIXME" title="Read More">read more <span class="fa right-arrow"></span></a>
+                  <p>
+                    Skip the do-overs and pick the perfect paint color the first time around.
+                  </p>
+                  <a class="read-more" href="#FIXME" title="Read More">read more <span class="fa right-arrow"></span>
+                  </a>
+                </div>
               </li>
             </ul>
           </div>
