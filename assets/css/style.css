@@ -663,9 +663,24 @@ nav ul li a:hover .fa:Before{
     margin-top: 20px;
     flex-wrap: wrap;
   }
-  nav ul, .nav-icons {
+  nav ul {
     display: none;
   }
+  nav {
+    position: relative;
+  }
+  nav ul {
+    /* display: block; */
+    position: absolute;
+    top: 50px;
+    background-color: rgba(0,0,0,0.9);
+    width: 100%;
+  }
+  nav ul li{
+    display: block;
+    margin: 5px 0;
+  }
+
   .hamburger-icon {
     display: block;
   }
