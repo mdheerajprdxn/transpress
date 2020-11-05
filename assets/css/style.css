@@ -113,6 +113,11 @@ li {
   border-radius: 10px;
   text-transform: uppercase;
   font-size: 0.8rem;
+  transition: all .3s ease-in-out;
+}
+
+.green-link:hover {
+  box-shadow: 2px 2px 5px #222;
 }
 
 /*=================================
@@ -199,12 +204,14 @@ nav ul li {
   font-size: 0.9rem;
 }
 
-nav ul li a{
+nav ul li a,
+nav a span{
   color: white;
 }
 
 nav ul li a:hover, 
-nav ul li a:hover .fa:Before{
+nav ul li a:hover .fa:before,
+.nav-icons a span:hover .fa:before{
   color: #32AF96;
 }
 .hamburger-icon {
@@ -272,6 +279,11 @@ nav ul li a:hover .fa:Before{
   color: #32AF96;
   font-size: 5rem;
 }
+
+.jumbotron .wrapper .green-link:hover {
+  background-color: white;
+  color: #32AF96;
+}
 .jumbotron .wrapper .white-link {
   margin-left: 7px;
   background-color: #fff;
@@ -280,7 +292,14 @@ nav ul li a:hover .fa:Before{
   border-radius: 10px;
   text-transform: uppercase;
   font-size: 0.8rem;
+  transition: 0.3s all ease-in-out;
 }
+
+.jumbotron .wrapper .white-link:hover {
+  background-color: #32AF96;
+  color: white;
+}
+
 /*=================================
   Header styling ends here
 =================================*/  
@@ -597,6 +616,10 @@ nav ul li a:hover .fa:Before{
   content: "\f290 ";
   color: white;
   font-size: 1.2rem;
+}
+
+.bag-icon:before:hover {
+  color: #32AF96;
 }
 
 .search-icon:before {
