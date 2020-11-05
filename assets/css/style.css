@@ -618,6 +618,10 @@ nav ul li a:hover .fa:before,
   font-size: 1.2rem;
 }
 
+.bag-icon:before:hover {
+  color: #32AF96;
+}
+
 .search-icon:before {
   font-size: 1.2rem;
   color: white;
