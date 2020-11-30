@@ -19,8 +19,20 @@ showNavButton.addEventListener("click", myFunction);
 // Video Modal
 let modal = document.querySelector("#modal");
 let videoElement = document.querySelector(".about-video");
-videoElement.addEventListener("click", showModal());
+let video = document.querySelector("#modal video");
+videoElement.addEventListener("click", showModal);
 
-function showModal() {
+function showModal(e) {
+  // console.log(e.target);
   modal.style.display = "block";
+  // video.play();
+}
+
+window.addEventListener("click", closeModal);
+
+function closeModal(e) {
+  console.log(e.target);
+  if (e.target == modal) {
+    modal.style.display = "none";
+  }
 }
