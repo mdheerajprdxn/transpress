@@ -278,6 +278,10 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
   color: white;
 }
 
+.nav-icons a:hover .fa:before {
+  color: #32AF96;
+}
+
 .dropdown-menu:hover ul.dropdown {
   display: block;
 }
