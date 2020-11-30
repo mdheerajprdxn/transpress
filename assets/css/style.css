@@ -176,7 +176,6 @@ li {
 
 .header-info {
   display: flex;
-  /* flex-basis: 60%; */
 }
 
 .header-info-desc a {
@@ -221,8 +220,8 @@ li {
 /* NAVBAR */
 
 nav {
-  background-color: black;
   padding: 1.3rem 0;
+  background-color: black;
   text-transform: capitalize;
 }
 
@@ -251,10 +250,10 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
 }
 
 .hamburger-icon {
-  background-color: transparent;
-  outline: none;
   border: none;
   display: none;
+  outline: none;
+  background-color: transparent;
 }
 
 .hamburger-icon::before {
@@ -277,6 +276,10 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
 .nav li ul.dropdown a {
   padding: 5px;
   color: white;
+}
+
+.nav-icons a:hover .fa:before {
+  color: #32AF96;
 }
 
 .dropdown-menu:hover ul.dropdown {
@@ -305,35 +308,35 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
 .jumbotron h1 {
   font-size: 6rem;
   text-align: center;
-  text-transform: uppercase;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .jumbotron-text {
-  text-transform: capitalize;
   font-size: 0.9rem;
   text-align: center;
+  text-transform: capitalize;
 }
 
 .jumbotron-list {
   padding-top: 20px;
   padding-bottom: 40px;
-  display: flex;
   width: 100%;
+  display: flex;
   justify-content: space-around;
 }
 
 .jumbotron-list li {
+  padding: 20px 0px;
   display: flex;
   flex-flow: column;
+  flex-basis: 23%;
+  justify-content: center;
   background-color: white;
   color: black;
-  padding: 20px 0px;
-  text-transform: uppercase;
   font-weight: 600;
-  justify-content: center;
-  align-items: center;
-  flex-basis: 23%;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .jumbotron-list li .fa {
@@ -348,12 +351,12 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
 
 .jumbotron .wrapper .white-link {
   margin-left: 7px;
-  background-color: #fff;
-  color: #777;
   padding: 15px 30px;
   border-radius: 10px;
-  text-transform: uppercase;
+  background-color: #fff;
+  color: #777;
   font-size: 0.8rem;
+  text-transform: uppercase;
   transition: 0.3s all ease-in-out;
 }
 
@@ -377,52 +380,51 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
 }
 
 .services h2 {
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  text-align: center;
   color: #333333;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .green-underline-middle {
-  text-align: center;
   margin: 10px auto;
   padding: 2px;
-  background-color: #32AF96;
   width: 40px;
+  background-color: #32AF96;
+  text-align: center;
 }
 
 .services-list {
+  padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 20px;
 }
 
 .services-list li {
+  margin: 10px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
   flex-basis: 32%;
   display: flex;
-  border: 1px solid #ddd;
-  padding: 20px;
-  box-sizing: border-box;
-  margin: 10px 0;
 }
 
 .services-list h3 {
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 600;
   margin: 0 0 10px 0;
   color: #333;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .services-list li .fa:before {
-  font-size: 1.4rem;
-  padding: 10px;
   margin-right: 30px;
-  background-color: #eee;
+  padding: 10px;
   border-radius: 50%;
-  /* box-sizing: border-box; */
+  background-color: #eee;
+  font-size: 1.4rem;
 }
 
 .services-list .service-desc {
@@ -437,9 +439,9 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
 }
 
 .about-us .wrapper {
-  display: flex;
   width: 100%;
   max-width: 100%;
+  display: flex;
   justify-content: flex-end;
 }
 
@@ -448,54 +450,50 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
 }
 
 .about-desc {
-  /* padding: 90px 2% 90px 2%; */
-  /* width: 40%; */
   max-width: 680px;
-  /* padding: 90px 2% 90px 0%; */
+  margin-left: 6%;
   padding-top: 90px;
   padding-bottom: 90px;
   padding-right: 90px;
-  /* padding-left: 6%; */
-  margin-left: 6%;
   box-sizing: border-box;
 }
 
 .about-desc p:nth-child(3) {
-  font-size: 0.9rem;
-  color: #777;
   margin-top: 20px;
   margin-bottom: 40px;
+  color: #777;
+  font-size: 0.9rem;
   line-height: 1.5rem;
 }
 
 .about-desc p:nth-child(4) {
-  font-size: 0.9rem;
-  color: #777;
   margin: 20px 0;
   line-height: 1.5rem;
+  font-size: 0.9rem;
+  color: #777;
 }
 
 .about-us h2 {
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  font-weight: 600;
   color: #333333;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .green-underline-left {
   margin: 10px 0;
   padding: 2px;
-  background-color: #32AF96;
   width: 40px;
+  background-color: #32AF96;
 }
 
 .about-video {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/video.jpeg');
-  background-size: cover;
-  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/video.jpeg');
+  background-size: cover;
+  background-position: center;
 }
 
 .play-icon::before {
@@ -507,9 +505,9 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
 /* STATISTICS */
 
 .statistics {
+  padding: 70px 0;
   background-color: #333;
   color: white;
-  padding: 70px 0;
   text-align: center;
 }
 
@@ -527,16 +525,16 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
 
 .statistics .number {
   margin: 10px 0 20px 0;
+  color: white;
   font-size: 2rem;
   font-weight: 600;
-  color: white;
 }
 
 .statistics span:nth-child(3) {
-  text-transform: uppercase;
+  color: #ccc;
   font-weight: 600;
   font-size: 0.9rem;
-  color: #ccc;
+  text-transform: uppercase;
 }
 
 .statistics .fa:before {
@@ -556,11 +554,11 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
 }
 
 .info h2 {
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #333333;
   margin-bottom: 30px;
+  color: #333333;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .info .wrapper>* {
@@ -590,11 +588,11 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
 
 .accordian-header h3 {
   padding: 20px;
-  text-transform: uppercase;
-  font-weight: 600;
   border: 1px solid #ccc;
-  flex-grow: 1;
   display: flex;
+  font-weight: 600;
+  flex-grow: 1;
+  text-transform: uppercase;
 }
 
 .accordian-header h3 .icon {
@@ -608,11 +606,11 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
 
 .accordian-content {
   padding: 10px;
-  font-size: 0.9rem;
-  color: #777;
-  line-height: 1.5rem;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
+  color: #777;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
 }
 
 .news-stories {
@@ -621,14 +619,14 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
 }
 
 .news-stories li {
-  flex-basis: 48%;
   border: 1px solid #ccc;
+  flex-basis: 48%;
 }
 
 .news-content {
   padding: 15px;
-  font-size: .9rem;
   color: #777;
+  font-size: .9rem;
 }
 
 .news-content date {
@@ -648,17 +646,17 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
 }
 
 .news-content h3 {
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: 600;
   color: #333;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .news-content .read-more {
-  text-transform: uppercase;
   color: #777;
   font-weight: 600;
   font-size: 1.1rem;
+  text-transform: uppercase;
 }
 
 .news-content .read-more .fa:before {
@@ -698,10 +696,10 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
 }
 
 .search-icon:before {
-  font-size: 1.2rem;
-  color: white;
-  content: "\f002 ";
   margin-left: 5px;
+  color: white;
+  font-size: 1.2rem;
+  content: "\f002 ";
 }
 
 .boat-icon:before {
@@ -780,10 +778,10 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
     position: relative;
   }
   .backdrop {
-    display: none;
-    position: fixed;
     width: 100%;
     height: 100%;
+    display: none;
+    position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
   }
