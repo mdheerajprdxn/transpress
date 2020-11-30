@@ -570,11 +570,11 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
   flex-grow: 1;
 }
 
-.accordian-header h3 .fa {
+.accordian-header h3 .icon {
   margin-right: 10px;
 }
 
-.special ul li .fa {
+.special ul li .icon {
   font-size: 1.7rem;
   color: #bbb;
 }
@@ -651,6 +651,10 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
 =================================*/
 
 /* ICONS  */
+
+.icon {
+  font-family: FontAwesome;
+}
 
 .truck-icon:before {
   content: "\f0d1";
@@ -788,7 +792,7 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
     flex-basis: 100%;
   }
   .services-list li {
-    flex-basis: 45%;
+    flex-basis: 48%;
   }
   .statistics ul {
     flex-wrap: wrap;
