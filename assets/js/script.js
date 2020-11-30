@@ -3,18 +3,21 @@
 */
 
 var showNavButton = document.querySelector(".hamburger-icon");
-
+let backdrop = document.querySelector(".backdrop");
 var nav = document.querySelector("#nav");
 
-function myFunction() {
-  if (nav.style.display == "block") {
-    nav.style.display = "none";
-  } else {
-    nav.style.display = "block";
-  }
+function showNav() {
+  nav.style.transform = "translateX(0%)";
+  backdrop.style.display = "block";
 }
 
-showNavButton.addEventListener("click", myFunction);
+backdrop.addEventListener("click", hideNav);
+function hideNav() {
+  nav.style.transform = "translateX(-100%)";
+  backdrop.style.display = "none";
+}
+
+showNavButton.addEventListener("click", showNav);
 
 // Video Modal
 let modal = document.querySelector("#modal");
