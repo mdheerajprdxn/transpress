@@ -179,6 +179,10 @@ li {
   /* flex-basis: 60%; */
 }
 
+.header-info-desc a {
+  color: black;
+}
+
 .header-info-desc span:nth-child(1) {
   font-weight: 600;
 }
@@ -256,6 +260,26 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
   content: "\f0c9";
   color: white;
   background-color: black;
+}
+
+.nav li ul.dropdown {
+  margin-top: 10px;
+  display: none;
+  position: absolute;
+  background-color: #000;
+}
+
+.nav li ul.dropdown li {
+  display: block;
+}
+
+.nav li ul.dropdown a {
+  padding: 5px;
+  color: white;
+}
+
+.dropdown-menu:hover ul.dropdown {
+  display: block;
 }
 
 /* JUMBOTRON */
