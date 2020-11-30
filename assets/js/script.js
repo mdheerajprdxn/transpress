@@ -15,3 +15,12 @@ function myFunction() {
 }
 
 showNavButton.addEventListener("click", myFunction);
+
+// Video Modal
+let modal = document.querySelector("#modal");
+let videoElement = document.querySelector(".about-video");
+videoElement.addEventListener("click", showModal());
+
+function showModal() {
+  modal.style.display = "block";
+}
