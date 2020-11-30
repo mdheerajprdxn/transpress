@@ -206,7 +206,7 @@ li {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 10;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -215,6 +215,7 @@ li {
   display: block;
   margin: auto;
   height: 300px;
+  max-width: 100%;
 }
 
 /* NAVBAR */
@@ -303,6 +304,7 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
 
 .jumbotron h1 {
   font-size: 6rem;
+  text-align: center;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -508,6 +510,7 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
   background-color: #333;
   color: white;
   padding: 70px 0;
+  text-align: center;
 }
 
 .statistics ul {
@@ -590,8 +593,8 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
   text-transform: uppercase;
   font-weight: 600;
   border: 1px solid #ccc;
-  /* box-sizing: border-box; */
   flex-grow: 1;
+  display: flex;
 }
 
 .accordian-header h3 .icon {
@@ -760,17 +763,29 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
     flex-wrap: wrap;
   }
   nav ul {
-    display: none;
+    height: 100%;
+    max-width: 50%;
+    padding: 20px;
+    padding-top: 50px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: all 0.3s ease;
+    transform: translateX(-100%);
   }
   nav {
     position: relative;
   }
-  nav ul {
-    /* display: block; */
-    position: absolute;
-    top: 50px;
-    background-color: rgba(0, 0, 0, 0.9);
+  .backdrop {
+    display: none;
+    position: fixed;
     width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
   }
   nav ul li {
     display: block;
@@ -781,6 +796,25 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
   }
   .jumbotron h1 {
     font-size: 4.5rem;
+  }
+  .dropdown-menu:hover ul.dropdown {
+    display: none;
+  }
+  .services-list li {
+    flex-basis: 48%;
+  }
+  .info {
+    padding: 50px 0;
+  }
+  .info .wrapper {
+    flex-wrap: wrap;
+  }
+  .info .wrapper>* {
+    flex-basis: 100%;
+  }
+  .info .wrapper h2 {
+    margin-top: 30px;
+    /* font-size: 1.7rem; */
   }
 }
 
@@ -802,7 +836,6 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
   }
   .jumbotron-list li {
     flex-basis: 45%;
-    /* padding: 20px; */
     font-size: 0.9rem;
   }
   .about-us .wrapper {
@@ -816,7 +849,7 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
     flex-basis: 100%;
   }
   .services-list li {
-    flex-basis: 48%;
+    flex-basis: 100%;
   }
   .statistics ul {
     flex-wrap: wrap;
@@ -825,11 +858,15 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
     flex-basis: 45%;
     margin-top: 20px;
   }
+  .info {
+    padding: 50px 0;
+  }
   .info .wrapper {
     flex-wrap: wrap;
   }
   .info .wrapper h2 {
-    margin-top: 20px;
+    margin-top: 30px;
+    font-size: 1.7rem;
   }
   .info .wrapper>* {
     flex-basis: 100%;
