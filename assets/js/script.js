@@ -23,9 +23,8 @@ let video = document.querySelector("#modal video");
 videoElement.addEventListener("click", showModal);
 
 function showModal(e) {
-  // console.log(e.target);
   modal.style.display = "block";
-  // video.play();
+  video.play();
 }
 
 window.addEventListener("click", closeModal);
@@ -34,5 +33,6 @@ function closeModal(e) {
   console.log(e.target);
   if (e.target == modal) {
     modal.style.display = "none";
+    video.pause();
   }
 }
