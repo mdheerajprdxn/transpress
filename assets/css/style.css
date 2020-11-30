@@ -207,7 +207,7 @@ li {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal-content video {
+.modal-content {
   display: block;
   margin: auto;
   height: 300px;
