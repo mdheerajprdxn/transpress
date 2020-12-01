@@ -9,7 +9,87 @@
    License: none (public domain)
    ========================================================================== */
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -20,7 +100,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 /* HTML5 display-role reset for older browsers */
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -32,13 +122,16 @@ html {
 
 /* Align radios and text inputs with their label */
 
-input[type='radio'] {
+input[type="radio"] {
   vertical-align: text-bottom;
 }
 
 /* Hand cursor on clickable input elements */
 
-label, input[type='button'], input[type='submit'], button {
+label,
+input[type="button"],
+input[type="submit"],
+button {
   cursor: pointer;
 }
 
@@ -58,7 +151,8 @@ img {
   vertical-align: middle;
 }
 
-sub, sup {
+sub,
+sup {
   vertical-align: baseline;
   position: relative;
   font-size: 55%;
@@ -66,17 +160,18 @@ sub, sup {
 }
 
 sup {
-  top: -.7em;
+  top: -0.7em;
 }
 
 sub {
-  bottom: -.25em;
+  bottom: -0.25em;
 }
 
 /* 1.2. Clear Fix
    ========================== */
 
-.cf:before, .cf:after {
+.cf:before,
+.cf:after {
   display: table;
   content: " ";
 }
@@ -117,13 +212,13 @@ li {
 /* GENERAL STYLES */
 
 .green-link {
-  background-color: #32AF96;
+  background-color: #32af96;
   color: white;
   padding: 15px 30px;
   border-radius: 10px;
   text-transform: uppercase;
   font-size: 0.8rem;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .green-link:hover {
@@ -151,17 +246,9 @@ li {
   flex-flow: column;
 }
 
-.phone-icon:before {
-  content: "\f095";
-}
-
-.home-icon:before {
-  content: "\f015";
-}
-
-.clock-icon:before {
-  content: "\f017";
-}
+.phone-icon:before {  content: "\f095";}
+.home-icon:before {  content: "\f015";}
+.clock-icon:before {  content: "\f017";}
 
 .header-info-item {
   display: flex;
@@ -169,31 +256,22 @@ li {
 }
 
 .header-info-item .fa::before {
-  color: #32AF96;
+  color: #32af96;
   font-size: 2rem;
   padding-right: 20px;
 }
 
-.header-info {
-  display: flex;
-}
+.header-info {  display: flex; }
+.header-info-desc a {  color: black; }
+.header-info-desc span:nth-child(1) {  font-weight: 600; }
 
-.header-info-desc a {
-  color: black;
-}
-
-.header-info-desc span:nth-child(1) {
-  font-weight: 600;
-}
-
-.header-info-desc span:nth-child(2) {
+.header-info-desc span:nth-child(2),
+.header-info-desc span:nth-child(2) a {
   font-size: 0.8rem;
   color: #777;
 }
 
-.header-info ul {
-  display: flex;
-}
+.header-info ul {  display: flex; }
 
 /* MODAL */
 
@@ -241,12 +319,15 @@ nav ul li {
   font-size: 0.9rem;
 }
 
-nav ul li a, nav a span {
+nav ul li a,
+nav a span {
   color: white;
 }
 
-nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:before {
-  color: #32AF96;
+nav ul li a:hover,
+nav ul li a:hover .fa:before,
+.nav-icons a span:hover .fa:before {
+  color: #32af96;
 }
 
 .hamburger-icon {
@@ -279,7 +360,7 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
 }
 
 .nav-icons a:hover .fa:before {
-  color: #32AF96;
+  color: #32af96;
 }
 
 .dropdown-menu:hover ul.dropdown {
@@ -289,7 +370,8 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
 /* JUMBOTRON */
 
 .jumbotron {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/slider.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/slider.jpg");
   background-size: cover;
   color: white;
   padding: 30px 0;
@@ -340,13 +422,13 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
 }
 
 .jumbotron-list li .fa {
-  color: #32AF96;
+  color: #32af96;
   font-size: 5rem;
 }
 
 .jumbotron .wrapper .green-link:hover {
   background-color: white;
-  color: #32AF96;
+  color: #32af96;
 }
 
 .jumbotron .wrapper .white-link {
@@ -361,7 +443,7 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
 }
 
 .jumbotron .wrapper .white-link:hover {
-  background-color: #32AF96;
+  background-color: #32af96;
   color: white;
 }
 
@@ -391,7 +473,7 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
   margin: 10px auto;
   padding: 2px;
   width: 40px;
-  background-color: #32AF96;
+  background-color: #32af96;
   text-align: center;
 }
 
@@ -435,7 +517,7 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
 /* ABOUT US */
 
 .about-us {
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
 }
 
 .about-us .wrapper {
@@ -445,7 +527,7 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
   justify-content: flex-end;
 }
 
-.about-us .wrapper>* {
+.about-us .wrapper > * {
   flex-basis: 50%;
 }
 
@@ -484,14 +566,15 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
   margin: 10px 0;
   padding: 2px;
   width: 40px;
-  background-color: #32AF96;
+  background-color: #32af96;
 }
 
 .about-video {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/video.jpeg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/video.jpeg");
   background-size: cover;
   background-position: center;
 }
@@ -538,7 +621,7 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
 }
 
 .statistics .fa:before {
-  color: #32AF96;
+  color: #32af96;
   font-size: 3rem;
 }
 
@@ -561,7 +644,7 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
   text-transform: uppercase;
 }
 
-.info .wrapper>* {
+.info .wrapper > * {
   flex-basis: 48%;
 }
 
@@ -626,7 +709,7 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
 .news-content {
   padding: 15px;
   color: #777;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .news-content date {
@@ -642,7 +725,7 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
 }
 
 .news-content .fa:before {
-  color: #32AF96;
+  color: #32af96;
 }
 
 .news-content h3 {
@@ -692,7 +775,7 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
 }
 
 .bag-icon:before:hover {
-  color: #32AF96;
+  color: #32af96;
 }
 
 .search-icon:before {
@@ -807,7 +890,7 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
   .info .wrapper {
     flex-wrap: wrap;
   }
-  .info .wrapper>* {
+  .info .wrapper > * {
     flex-basis: 100%;
   }
   .info .wrapper h2 {
@@ -866,7 +949,7 @@ nav ul li a:hover, nav ul li a:hover .fa:before, .nav-icons a span:hover .fa:bef
     margin-top: 30px;
     font-size: 1.7rem;
   }
-  .info .wrapper>* {
+  .info .wrapper > * {
     flex-basis: 100%;
   }
 }
