@@ -595,8 +595,9 @@ nav ul li a:hover .fa:before,
 .close-modal {
   padding: 5%;
   color: #fff;
-  text-align: end;
+  cursor: pointer;
   font-size: 1.5rem;
+  text-align: end;
 }
 
 .close-modal:before {
