@@ -249,6 +249,8 @@ li {
 .phone-icon:before {  content: "\f095";}
 .home-icon:before {  content: "\f015";}
 .clock-icon:before {  content: "\f017";}
+.icon.cross {  display: none;}
+.icon.cross::before {  content: "\f00d ";}
 
 .header-info-item {
   display: flex;
