@@ -39,7 +39,7 @@ function closeModal(e) {
   }
 }
 
-let dropDownMenu = document.querySelectorAll(".dropdown-menu");
+let dropDownMenu = document.querySelectorAll("li.dropdown-menu");
 
 // nav dropdown click
 
